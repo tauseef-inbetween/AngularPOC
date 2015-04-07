@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script type="text/javascript" src="../../../externalLibraries/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="../../../externalLibraries/jquery-ui.js"></script>
+    <script type="text/javascript" src="../../../externalLibraries/angular.min.js"></script>
+
+    <script type="text/javascript" src="../../../externalLibraries/reactjs/react.js"></script>
+    <script type="text/javascript" src="../../../externalLibraries/reactjs/JSXTransformer.js"></script>
+
+    <script type="text/javascript" src="../business/Business.js"></script>
+    <script type="text/javascript" src="../presenters/ProductTagsTreePresenter.js"></script>
+    <script type="text/javascript" src="../presenters/ProductsPresenter.js"></script>
+    <script type="text/javascript" src="../../../interactors/ProductsInteractor.js"></script>
+    <script type="text/javascript" src="../../../interactors/TagsInteractor.js"></script>
+
+    <script type="text/jsx" src="../views/ProductsView.js"></script>
+
+    <script type="text/javascript" src="../../../tacks/MockDataForTags.js"></script>
+    <script type="text/javascript" src="../../../tacks/MockDataForProducts.js"></script>
+
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../../../externalLibraries/jquery-ui.css">
+
+    <link rel="import" href="../../../inhouseComponents/tagsView/tagsView.html">
+</head>
+<body>
+<div ng-app="store">
+<div id="abc">
+    <!--<script type="text/ng-template" id="tagElement.html">
+        <div class="tagListElWrapper">
+            <div class="tagListElText">{{tag.name}}</div>
+            <input class="tagListElRel" ng-model="tag.relevance">
+            <div class="tagListElSlider"></div>
+        </div>
+    </script>-->
+</div>
+    <button id="switchToProduct1">Product - 1</button>
+    <button id="switchToProduct2">Product - 2</button>
+    <button id="switchToProduct3">Product - 3</button>
+    <button id="switchToProduct4">Product - 4</button>
+    <button id="switchToProduct5">Product - 5</button>
+
+    <div ng-controller="TreeController as tree">
+        <div class="tagTreeWrapper">
+            <div ng-repeat="tag in tree.tags">
+                {{tag.relevance}}
+                <tag-element tagName="tag.name" tagRelevance="tag.relevance"></tag-element>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="productsContainer"></div>
+</body>
+
+<script type="text/javascript" src="../presenters/HomeScreenPresenter.js"></script>
+</html>
