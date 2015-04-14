@@ -62,6 +62,68 @@ var allProducts = [
     ]
   },
   {
+    id: '2',
+    name: 'Product - 2',
+    tags: [
+      {
+        id: '1',
+        name: 'Adv Area - 1',
+        relevance: '-10'
+      },
+      {
+        id: '2',
+        name: 'Adv Area - 2',
+        relevance: '100'
+      },
+      {
+        id: '3',
+        name: 'Adv Area - 3',
+        relevance: '-40'
+      },
+      {
+        id: '4',
+        name: 'Adv Area - 4',
+        relevance: '-30'
+      },
+      {
+        id: '5',
+        name: 'Adv Area - 5',
+        relevance: '-20'
+      }
+    ]
+  },
+  {
+    id: '2',
+    name: 'Product - 2',
+    tags: [
+      {
+        id: '1',
+        name: 'Adv Area - 1',
+        relevance: '-10'
+      },
+      {
+        id: '2',
+        name: 'Adv Area - 2',
+        relevance: '100'
+      },
+      {
+        id: '3',
+        name: 'Adv Area - 3',
+        relevance: '-40'
+      },
+      {
+        id: '4',
+        name: 'Adv Area - 4',
+        relevance: '-30'
+      },
+      {
+        id: '5',
+        name: 'Adv Area - 5',
+        relevance: '-20'
+      }
+    ]
+  },
+  {
     id: '3',
     name: 'Product - 3',
     tags: [
